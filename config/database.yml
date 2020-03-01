@@ -80,7 +80,7 @@ test:
 #
 production:
   <<: *default
-  adapter: mysql
-  database: swat-zero-waste_production
-  username: swat-zero-waste
-  password: <%= ENV['SWAT-ZERO-WASTE_DATABASE_PASSWORD'] %>
+  database: swat_zero_waste_production
+  username: postgres
+  host: db
+  password: <%= ENV['SWAT_ZERO_WASTE_DATABASE_PASSWORD'] %>
